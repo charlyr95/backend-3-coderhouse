@@ -11,6 +11,7 @@ import routes from "./routes/router.js";
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+connectDB();
 
 // routes
 app.use("/api", routes);
@@ -19,7 +20,6 @@ app.use("/api", routes);
 app.use(errorHandler);
 
 
-connectDB();
 app.listen(config.PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${config.PORT}`);
 });
