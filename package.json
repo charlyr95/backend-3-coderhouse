@@ -17,10 +17,11 @@
   "license": "ISC",
   "type": "module",
   "imports": {
-    "#/": "./src/",
-    "#config/": "./src/config/",
-    "#modules/": "./src/modules/",
-    "#middleware/": "./src/middleware/"
+    "#/*": "./src/*",
+    "#config/*": "./src/config/*",
+    "#routes/*": "./src/routes/*",
+    "#modules/*": "./src/modules/*",
+    "#middleware/*": "./src/middleware/*"
   },
   "bugs": {
     "url": "https://github.com/charlyr95/backend-3-coderhouse/issues"
