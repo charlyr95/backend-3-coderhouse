@@ -1,0 +1,38 @@
+{
+  "name": "backend-3-coderhouse",
+  "version": "1.0.0",
+  "description": "Repositorio para proyecto final del curso Backend 3 de Coderhouse",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlyr95/backend-3-coderhouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "imports": {
+    "#/": "./src/",
+    "#config/": "./src/config/",
+    "#modules/": "./src/modules/",
+    "#middleware/": "./src/middleware/"
+  },
+  "bugs": {
+    "url": "https://github.com/charlyr95/backend-3-coderhouse/issues"
+  },
+  "homepage": "https://github.com/charlyr95/backend-3-coderhouse#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.6"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.3.0"
+  }
+}
