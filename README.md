@@ -54,7 +54,9 @@ Base URL: `/api`
 - `DELETE /:id` → eliminar mascota
 
 ### Mocks (`/api/mocks`)
+- `GET /mockingpets` → generar mascotas fake (default 20)
 - `GET /mockingpets/:quantity` → generar mascotas fake (cantidad opcional, default 10)
+- `GET /mockingusers` → generar usuarios fake (default 50)
 - `GET /mockingusers/:quantity` → generar usuarios fake (cantidad opcional, default 10)
 - `POST /generateData` → persistir datos en DB
 	- Body ejemplo: `{ "users": 5, "pets": 10 }`
