@@ -22,6 +22,11 @@ class Users {
     const updatedUser = await Model.findByIdAndUpdate(id, user, { new: true });
     return updatedUser;
   }
+
+  async delete(id){
+    const deletedUser = await Model.findByIdAndDelete(id);
+    return deletedUser;
+  }
 }
 
 export default new Users();
