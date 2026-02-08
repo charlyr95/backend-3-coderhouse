@@ -20,7 +20,7 @@ class PetsController {
     } catch (error) {
       res.status(500).json({ message: "Error al obtener mascota", error: error.message });
     }
-  }
+  };
 
   create = async (req, res) => {
     try {
@@ -30,7 +30,7 @@ class PetsController {
     } catch (error) {
       res.status(500).json({ message: "Error al crear mascota", error: error.message });
     }
-  }
+  };
 
   insertMany = async (req, res) => {
     try {
@@ -40,7 +40,7 @@ class PetsController {
     } catch (error) {
       res.status(500).json({ message: "Error al insertar mascotas", error: error.message });
     }
-  }
+  };
 
   update = async (req, res) => {
     try {
@@ -52,7 +52,7 @@ class PetsController {
     } catch (error) {
       res.status(500).json({ message: "Error al actualizar mascota", error: error.message });
     }
-  }
+  };
 
   delete = async (req, res) => {
     try {
@@ -63,7 +63,7 @@ class PetsController {
     } catch (error) {
       res.status(500).json({ message: "Error al eliminar mascota", error: error.message });
     }
-  }
+  };
 }
 
 export default new PetsController();

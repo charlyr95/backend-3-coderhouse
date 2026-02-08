@@ -1,36 +1,36 @@
-import Model from "./pets.service.js";
+import model from "./pets.model.js";
 
 class PetsService {
 
     async getAll(){
-      return Model.find();
+      return model.find();
     }
   
     async getById(id){
       if (!id) throw new Error("ID is required");
-      return Model.findById(id);
+      return model.findById(id);
     }
   
     async create(pet){
       if (!pet) throw new Error("Pet data is required");
-      return Model.create(pet);
+      return model.create(pet);
     }
     
     async insertMany(pets){
       if (!pets || !Array.isArray(pets)) throw new Error("Array of pets data is required");
-      return Model.insertMany(pets);
+      return model.insertMany(pets);
     }
   
     async update(id, pet){
       if (!id) throw new Error("ID is required");
       if (!pet) throw new Error("Pet data is required");
-      const updatedPet = await Model.findByIdAndUpdate(id, pet, { new: true });
+      const updatedPet = await model.findByIdAndUpdate(id, pet, { new: true });
       return updatedPet;
     }
   
     async delete(id){
       if (!id) throw new Error("ID is required");
-      const deletedPet = await Model.findByIdAndDelete(id);
+      const deletedPet = await model.findByIdAndDelete(id);
       return deletedPet;
     }
 }
