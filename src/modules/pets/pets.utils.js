@@ -1,4 +1,4 @@
-import Model from "./pets.model.js";
+import Model from "./pets.service.js";
 
 class Pets {
 
